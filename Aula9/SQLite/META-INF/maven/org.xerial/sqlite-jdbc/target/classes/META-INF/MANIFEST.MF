@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.xerial.sqlitejdbc
+Bnd-LastModified: 1776274521369
+Build-Jdk: 25.0.1
+Built-By: codespace
+Bundle-Description: SQLite JDBC library
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: SQLite JDBC
+Bundle-SymbolicName: org.xerial.sqlite-jdbc;singleton:=true
+Bundle-Version: 3.36.0.3
+Created-By: Apache Maven Bundle Plugin
+Tool: Bnd-2.1.0.20130426-122213
