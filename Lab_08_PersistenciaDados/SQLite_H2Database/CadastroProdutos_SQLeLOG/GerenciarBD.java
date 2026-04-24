@@ -41,7 +41,7 @@ public class GerenciarBD {
                            ")"; */
 
 
-        final String sql = "CREATE TABLE produtos (" +
+        final String sql = "CREATE TABLE IF NOT EXISTS produtos (" +
                             "id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY," +
                             "nome VARCHAR(255) NOT NULL," +
                             "preco DECIMAL(10,2) NOT NULL," +
