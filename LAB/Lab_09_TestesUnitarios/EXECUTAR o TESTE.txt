@@ -1,0 +1,22 @@
+baixar o JUnit e colocar na pasta c:\Temp do labaratório.
+
+https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.10.0/junit-platform-console-standalone-1.10.0.jar
+
+renomeei esse arquivo na pasta Temp para  junit.jar (só por comodidade).
+
+----
+
+O exercício:
+1. baixar o arquivo com a classe  ConversorDeTexto.java
+2. Construir a classe ConversorDeTextoTest.java com os testes unitários para cada método. Tem 1 pronto e o restante para entregar.
+
+----
+Para executar os testes faça:
+1. Compile as duas classes   ConversorDeTexto.java e ConversorDeTextoTest.java com o seguinte comando:
+javac -cp "junit.jar" *.java
+
+1. Execute os testes com:
+java -jar junit.jar -cp . --select-class ConversorDeTextoTest
+
+A saída deve ser algo assim:
+
