@@ -1,0 +1,39 @@
+Exemplo simples: uma pasta com várias classes e Main.java
+Se você estiver dentro da pasta do seu projeto:
+
+cd /workspaces/POO-ObjectOrientedProgramming/LAB/Lab_09_TestesUnitarios
+javac *.java
+java Main
+
+
+Se Main.java estiver em outra pasta
+Por exemplo, se estiver em src/:
+
+cd /workspaces/POO-ObjectOrientedProgramming
+javac src/*.java
+java -cp src Main
+
+Ou, compilando e mantendo arquivos .class em outra pasta:
+javac -d out src/*.java
+java -cp out Main
+
+
+Se você usar package nas classes:
+
+Então compile a partir da raiz e execute com o nome do pacote:
+javac -d out src/app/*.java
+java -cp out app.Main
+
+
+Quando precisa usar bibliotecas externas (JARs)
+Se você tiver um JAR como junit.jar ou outra biblioteca:
+javac -cp lib/junit.jar:. src/*.java
+java -cp lib/junit.jar:. Main
+
+
+Resumindo
+Para compilar: javac Arquivo.java
+Para executar: java NomeDaClasse
+Se várias classes na mesma pasta: javac *.java
+Se usar pacotes: java pacote.Main
+Se usar JARs: -cp lib/exemplo.jar:.
