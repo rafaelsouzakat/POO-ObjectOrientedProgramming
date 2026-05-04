@@ -1,0 +1,13 @@
+public class LojaOnline{
+    //Atributo do tipo FormaPagamentoStrategy
+    private FormaPagamentoStrategy formaPagamento;
+    //Construtor
+    public LojaOnline(FormaPagamentoStrategy formaPagamento){
+        this.formaPagamento = formaPagamento;
+    }
+
+    public void finalizarCompra(double valor){
+        String confirmacao = formaPagamento.processarPagamento(valor);
+        System.out.println(confirmacao);
+    }
+}
